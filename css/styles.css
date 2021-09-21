@@ -843,6 +843,7 @@ cursor: pointer;
 
 .close-icon{
   fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon:hover {
@@ -862,6 +863,7 @@ cursor: pointer;
   display: flex;
 }
 .footer-email {
+  color: #FFFFFF;
   width: 338px;
   height: 50px;
   padding: 16px;
@@ -870,6 +872,7 @@ cursor: pointer;
 box-sizing: border-box;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
+
 }
 .footer-email::placeholder {
   font-family: Roboto;
@@ -913,6 +916,7 @@ color: #FFFFFF;
  margin-left: 10px; 
 }
 
+
 /* modal-form */
 
 .contact-form {
@@ -942,12 +946,19 @@ margin-bottom: 30px;
   height: 40px;
   padding-left: 42px;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus
-.form-input:focus {
-color: #2196F3;
+/* .form-input:focus
+.form-input:hover {
+color: red;
+outline: none;
+} */
+.input-wrap:hover {
+  fill: #2196F3;
+  
 }
+
 .name{
   margin-bottom: 4px;
   width: 25px;
@@ -1028,8 +1039,9 @@ letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
 
-.contract-checkbox {
-  width: 100%;
+
+.contract-checkbox { 
+    width: 100%;
   margin-bottom: 30px;
   border: none;
 }
@@ -1038,7 +1050,7 @@ padding-left: 8.36;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 14px;
+font-size: 12px;
 line-height: 24px;
 /* identical to box height, or 171% */
 
@@ -1094,22 +1106,24 @@ transform: translateY(-50%);
 
 }
 
-.form-input:focus .modal-form-icon
-.form-input:focus .modal-form-icon {
-fill: #2196F3;
-}
+
 
 .check-label{
-  display: block;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  
 }
 
 .icon-check {
+  display: flex;
+  align-items:center;
+  justify-content: center;
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
 border-radius: 2px;
-margin-right: 8px;
+margin-right: 7px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -1130,3 +1144,23 @@ justify-content: center;
   clip: rect(0 0 0 0);
 
 }
+
+.checkbox-policy-text{
+ font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.03em;
+
+color: #757575; 
+outline: none;
+}
+
+.contract-link{
+  color: #2196F3;
+
+}
+
